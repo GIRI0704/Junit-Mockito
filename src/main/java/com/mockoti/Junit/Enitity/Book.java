@@ -1,4 +1,4 @@
-package com.mockoti.Junit;
+package com.mockoti.Junit.Enitity;
 
 import jakarta.persistence.*;
 import lombok.Builder;

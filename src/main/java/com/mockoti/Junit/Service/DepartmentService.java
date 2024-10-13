@@ -1,4 +1,6 @@
-package com.mockoti.Junit;
+package com.mockoti.Junit.Service;
+
+import com.mockoti.Junit.Enitity.Department;
 
 import java.util.List;
 
