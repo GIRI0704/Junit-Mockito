@@ -1,0 +1,41 @@
+server:
+  port: 9030
+
+#spring:
+#  config:
+#    activate:
+#      on-profile: qa  # Correct way to set the active profile
+
+---
+spring:
+ # profiles: qa
+  application:
+    name: Junit
+  datasource:
+    driver-class-name: org.postgresql.Driver  # Updated driver for PostgreSQL
+    password: MSgiri0704@-_  # Your PostgreSQL password
+    url: jdbc:postgresql://localhost:5432/Junit  # PostgreSQL URL
+    username: postgres  # Your PostgreSQL username
+  h2:
+    console:
+      enabled: true  # You might want to disable this if not using H2
+
+  actuator:
+    endpoints:
+      web:
+        exposure:
+          include: "*"
+
+# ---
+# spring:
+#   profiles: prod
+#   application:
+#     name: Junit
+#   datasource:
+#     driver-class-name: org.h2.Driver
+#     password: password
+#     url: jdbc:h2:file:C:/Users/giridharan.ms_werize/Personal/Junit/data/testdb-prod
+#     username: sa
+#   h2:
+#     console:
+#       enabled: true
